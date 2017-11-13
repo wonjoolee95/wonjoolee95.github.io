@@ -1,25 +1,176 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+
 <head>
+
+	<title>WJL</title>
+
+	<!-- Meta tags -->
 	<meta charset="utf-8">
-	<title>"Menu"</title>
-	<style type="text/css">
-		h1 {
-			text-align: center;
-		}
-		div {
-			width: 300px;
-			margin: 10px;
-			padding: 10px;
-			border: 1px;
-			float: left;
-		}
-	</style>
+	<meta name="author" content="Won Joo Lee">
+	<meta name="description" content="Homepage of Won Joo Lee">
+	<meta name="keywords" content="Won Joo Lee, Won J. Lee, UC Irvine, Won Joo Lee UC Irvine, Won J. Lee UC Irvine">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- My CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
 </head>
-<body>
-	<h1>"Menu"</h1>
-	<div id="first">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
-	<div id="second">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
-	<div id="third">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</div>
+
+<!-- Bootstrap scrollspy: https://getbootstrap.com/docs/4.0/components/scrollspy/ -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<div class="container-fluid">
+
+		<!-- Bootstrap navbar: http://getbootstrap.com/docs/4.0/components/navbar/ -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+		    <div class="container">
+		        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+		        <div class="navbar-collapse collapse" id="navbar10">
+		            <ul class="navbar-nav nav-fill w-100">
+		                <li class="nav-item">
+		                    <a id="home-nav" class="nav-link active" href="#">Home</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#about">About</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#experience">Experience</a>
+		                </li>
+		                <li class="nav-item">
+		                    <a class="nav-link" href="#projects">Projects</a>
+		                </li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+
+		<div id="home">
+			<div>
+				<h1>Won Joo Lee</h1><br>
+				<h6>Aspiring Software Engineer</h6><hr>
+				<p>leewj2@uci.edu</p>
+				<p><a href="https://www.linkedin.com/in/wonjoolee95/" target="_blank">LinkedIn Profile <img class="external-link-icon" src="images/external-link-icon.svg"></a></p>
+				<p><a href="https://drive.google.com/open?id=0B9S-bHBTqURtYzctVmhqRDM5NWM" target="_blank">Resume.pdf <img class="external-link-icon" src="images/external-link-icon.svg"></a></p>
+				<hr>
+				<a class="btn btn-primary" href="#about" role="button">Learn More !</a>
+			</div>
+		</div>
+
+		<div id="about">
+			<div class="row">
+				<div class="col-md-3 text-center section-title">About me<img id="portrait" src="images/portrait-cropped.jpg" class="img-rounded mx-auto d-block" alt="portrait"></div>
+				<div class="col-md-9 section-content">My name is Won Joo Lee, currently a senior at University of California, Irvine studying computer science. I can work with object-oriented languages, databases, and full-stack development. In computer science, my interests include high-scale data processing and full-stack development. Some of my skills include Java, Python, C++, databases (MySQL, DynamoDB), full-stack development (HTML, CSS, JS, PHP), Unix, Linux, and git. Outside of school and work, I like to play sports, play video games, and eat good food!<br><br>
+				During summer of 2017, I  worked as a software development engineer (SDE) intern for Amazon at its headquarters in Seattle, Washington. I worked in a marketplace team, responsible for managing and disbursing funds to third-party sellers at Amazon. I designed and developed a scalable web service to process high-volume data to populate a new DynamoDB table and exposed new APIs to query the database. I will be joining Amazon as a full time SDE in summer of 2018.</div>
+			</div>
+		</div>
+
+		<div id="experience">
+			<div class="row">
+				<div class="col-md-3 text-center section-title">Experience</div>
+				<div class="col-md-9 section-content">
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<strong>Amazon.com</strong><br><small><i>Software Engineer Intern</i></small>
+						</div>
+						<div class="col-xs-12 col-lg-6 text-right">
+							<small>June 2017 - Sept. 2017</small>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>Designed and developed a scalable web service to process high-volume data to populate a new DynamoDB table and exposed new APIs to interact with the data.</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<strong>Empirical LLC</strong><br><small><i>Software Engineer Intern</i></small>
+						</div>
+						<div class="col-xs-12 col-lg-6 text-right">
+							<small>June 2016 - Sept. 2016</small>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>Enhanced real-time e-commerce marking APIs by increasing accuracy and developing test automation for email tracking and data collection on a live application.</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-xs-12 col-lg-6">
+							<strong>Calit2</strong><br><small><i>Undergraduate Research Assistant</i></small>
+						</div>
+						<div class="col-xs-12 col-lg-6 text-right">
+							<small>Jan. 2016 - June 2016</small>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>Developed database and backend for a web application using MySQL and python, while debugging and code-tracing on an existing project.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects">
+			<div class="row">
+				<div class="col-md-3 text-center section-title">Projects</div>
+				<div class="col-md-9 section-content">
+					<div class="row">
+						<div class="col">
+							<strong>School Search Engine</strong><br>
+							<small><i>Web search engine for uci.ics.edu domain</i></small>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>Developed a full search engine for UC Irvine’s computer science domain, querying against over forty thousand documents.</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<strong>I Heart Movies</strong><br>
+							<small><i>Online database for movie browsing and shopping</i></small>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>Developed an e-commerce platform for movies, supporting full-text live search, HTTPS connection, and bot-protection with reCAPTCHA.</p>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<strong>What’s Trending? <sup><smmall><a href="http://whatstrending.bitballoon.com/" target="_blank">Live, click here!</a></smmall></sup></strong><br>
+							<small><i>Real-time collection of trending posts</i></small>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p>Worked with APIs of various media to display and update trending topics in real time.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- jQuery, Popper.js, Bootstrap JS, SmoothScroll JS, my JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
